@@ -22,6 +22,10 @@ body {
   padding: 0 15px;
 }
 
+ul {
+  list-style: none;
+}
+
 /* Header */
 .header {
   background-color: #8e4575;
@@ -106,6 +110,7 @@ body {
   line-height: 21px;
   max-width: 135px;
   margin-bottom: 10px;
+  max-width: 100%;
 }
 
 .product__item-ing {
@@ -173,3 +178,153 @@ body {
   margin-top: 20px;
 }
 /* Footer */
+
+/* LeftSideBar */
+.menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 410px;
+  background-color: #fff;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.closeMenu {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+}
+
+.leftsiderbar__content {
+  font-size: 18px;
+  line-height: 20px;
+  padding-top: 120px;
+  padding-left: 60px;
+}
+
+.leftsiderbar__content > li:nth-child(2) {
+  margin-top: 18px;
+  margin-bottom: 75px;
+  font-weight: var(--ubun-bold);
+}
+.leftsiderbar__content > li:nth-child(2) > a {
+  color: #000;
+  text-decoration: none;
+}
+
+.leftsiderbar__content > li:last-child {
+  max-width: 165px;
+  height: 63px;
+}
+
+.gotoadmin {
+  position: absolute;
+  bottom: 75px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+/* LeftSideBar */
+
+/* RightSideBar */
+.cart {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 445px;
+  background-color: #8e4575;
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.closeCart {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+}
+
+.closeCart > img {
+  color: #fff;
+}
+
+.cart__catalog {
+  padding-top: 100px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.cart__catalog__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.cart__catalog__item-title {
+  font-size: 16px;
+  font-weight: var(--ubun-reg);
+  line-height: 19px;
+}
+
+.cart__catalog__item-price {
+  font-size: 18px;
+  font-weight: var(--ubun-bold);
+  line-height: 21px;
+}
+
+.cart__total {
+  margin: 0px 35px;
+  border-top: 1px solid #fff;
+  padding-top: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart__total > p {
+  font-size: 18px;
+  font-weight: var(--ubun-bold);
+  line-height: 21px;
+}
+/* RightSideBar */
+
+#openCart {
+  transition: all 0.5s;
+}
+
+#openCart:hover {
+  opacity: 0.5;
+}
+
+#openMenu {
+  transition: all 0.5s;
+}
+
+#openMenu:hover {
+  opacity: 0.5;
+}
+
+#closeCart {
+  transition: all 0.5s;
+}
+
+#closeCart:hover {
+  opacity: 0.5;
+}
+
+#closeMenu {
+  transition: all 0.5s;
+}
+
+#closeMenu:hover {
+  opacity: 0.5;
+}
