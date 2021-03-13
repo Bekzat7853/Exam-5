@@ -1,15 +1,15 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 :root {
-    --ubun-reg: 400;
-    --ubun-med: 500;
-    --ubun-bold: 700;
+  --ubun-reg: 400;
+  --ubun-med: 500;
+  --ubun-bold: 700;
 }
