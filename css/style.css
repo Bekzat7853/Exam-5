@@ -46,12 +46,6 @@ ul {
   margin: 22px 0px;
 }
 
-@media (max-width: 450px) {
-  .logo > img {
-    width: 157px;
-  }
-}
-
 .cart-block {
   display: flex;
   color: #fff;
@@ -185,7 +179,7 @@ ul {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 410px;
+  width: 445px;
   background-color: #fff;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -237,7 +231,7 @@ ul {
 
 /* RightSideBar */
 .cart {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
@@ -245,6 +239,8 @@ ul {
   background-color: #8e4575;
   box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.1);
   color: #fff;
+  height: max-content;
+  min-height: 100vh;
 }
 
 .closeCart {
@@ -283,11 +279,14 @@ ul {
 }
 
 .cart__total {
-  margin: 0px 35px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 20px;
   border-top: 1px solid #fff;
   padding-top: 17px;
   display: flex;
   justify-content: space-between;
+
 }
 
 .cart__total > p {
@@ -328,3 +327,32 @@ ul {
 #closeMenu:hover {
   opacity: 0.5;
 }
+
+@media (max-width: 450px) {
+  .logo > img {
+    width: 157px;
+  }
+
+  .cart {
+    width: 100%;
+  }
+
+  .menu {
+    width: 100%;
+  }
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 0.2s;
+}
+
+@keyframes fade {
+  from {
+    width: 245px;
+  } 
+  to {
+    width: 445px;
+  }
+}
+
