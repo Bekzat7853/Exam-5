@@ -38,10 +38,9 @@ const addPastry = async (pastry) => {
     headers: {
       "Content-type": "application/json;charset=utf-8",
     },
-    body: JSON.stringify(pastry),
+    body: pastry,
   });
-  let result = await res.json();
-  console.log(result);
+  return await res.json();
 };
 
 export { getPastry, uptadePastry, deletePastry, addPastry, url };

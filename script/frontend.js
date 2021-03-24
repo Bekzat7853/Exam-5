@@ -240,30 +240,6 @@ const increaseStock = async (id, currentStock) => {
   });
 };
 
-// Create new Pastry
-const postData = async (url, data) => {
-  let res = await fetch(url, {
-    method: "POST",
-    body: data,
-  });
-
-  return await res.text();
-};
-
-$form.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const formData = new FormData($form);
-
-  postData(`${url}/create`, formData)
-    .then((res) => {
-      console.log(res);
-    })
-    .catch(() => {
-      console.log("error");
-    });
-});
-
 // Export
 export {
   renderPastry,
