@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Sweet Bakery admin</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <a class="menu-open" href="#" id="openMenu">
+          <img src="/images/burger.svg" alt="Menu" />
+        </a>
+        <a class="logo" href="#">
+          <img src="/images/logo.png" alt="Logo" />
+        </a>
+        <p class="header__page-name">admin page</p>
+      </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Main -->
+    <main class="main">
+      <div class="container">
+        <h2 class="main__title">Avaliable sweets</h2>
+        <div class="change"></div>
+        <div class="add-btn__block">
+          <button id="addNewItem">Add new shop item</button>
+        </div>
+      </div>
+    </main>
+    <!-- Main -->
+
+    <!-- LeftSideBar -->
+    <div class="menu hide">
+      <a href="#" class="closeMenu" id="closeMenu">
+        <img src="/images/close.svg" alt="Close" />
+      </a>
+      <ul class="leftsiderbar__content">
+        <li>Contact us</li>
+        <li>
+          <a href="phone:+11 4783 4477 8999">+11 4783 4477 8999</a>
+        </li>
+        <li>Our delivery working from 09:00 to 23:00</li>
+      </ul>
+      <a href="/index.html" class="gotoadmin">Go to main page</a>
+    </div>
+    <!-- LeftSideBar -->
+
+    <!-- Modal -->
+    <div class="modal hide">
+      <div class="modal-backdrop"></div>
+      <div class="modal-body">
+        <h3 class="modal-body__title">Create new item in shop</h3>
+        <form class="modal-form">
+          <input type="text" value="name" name="name" />
+          <input type="text" value="image" name="image" />
+          <input type="text" value="ingredients" name="ingredients" />
+          <input type="number" value="inStock" name="inStock" />
+          <input type="number" value="cost" name="cost" />
+          <div>
+            <label for="delivery">Has delivery?</label>
+            <input type="checkbox" name="hasDelivery" />
+          </div>
+          <label>Address</label>
+          <input type="text" value="street" name="street" />
+          <input type="text" value="houseNumber" name="housNumber" />
+          <button>Add new item</button>
+        </form>
+      </div>
+    </div>
+    <!-- Modal -->
+
+    <script src="../script/admin.js" type="module"></script>
+  </body>
+</html>
